@@ -1,1 +1,240 @@
-<h1>Under construction!!</h1>
+<html>
+<head>
+<title>Coastal Light</title>
+<style>
+body{
+	font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+#outer{
+	height: 100%;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+}
+
+#title{
+	width: 980px;
+	margin:auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#logo{
+	float: left;
+}
+
+#menu{	
+	display:inline-block;
+	color: #eee;
+	background-color: #777;
+	font-size: 12pt;
+	margin-top: 10px;
+	padding: 10px;
+	width: 660px;
+}
+
+input{
+	display: none;
+}
+
+label{
+	background-color: #777;
+	margin-left: 10px;
+	padding: 10px;
+}
+
+label:hover{
+	background-color: #555;
+	cursor: pointer;
+	color: white;	
+	padding: 10px;
+}
+
+#content div{
+	display: none;
+	margin: 40px;
+	column-gap: 40px;
+	-webkit-column-gap: 40px;
+}
+
+#block1{
+	column-count: 3;
+	-webkit-column-count: 3;
+}
+
+#block2{
+	column-count: 2;
+	-webkit-column-count: 2;
+}
+
+#block4{
+	column-count: 2;
+	-webkit-column-count: 2;
+
+}
+
+#radio1:checked ~ #block1{
+	display: block;
+}
+
+#radio2:checked ~ #block2{
+	display: block;
+}
+
+#radio3:checked ~ #block3{
+	display: block;
+}
+
+#radio4:checked ~ #block4{
+	display: block;
+}
+
+#radio5:checked ~ #block5{
+	display: block;
+}
+
+#radio6:checked ~ #block6{
+	display: block;
+}
+
+#banner{
+	overflow: hidden;
+}
+
+#content{
+	flex: 1;
+	-webkit-flex: 1;
+	overflow: auto;
+	width: 980px;
+	margin:	auto;
+}
+
+#status{
+	background-color:#777;
+	color: white;
+	width: 980px;
+	margin:auto;
+	font-size: 9pt;
+	text-align: right;
+	padding: 4px;
+}
+
+#bottom{ 
+	background-color: #777;
+}
+
+td{
+	padding-right: 40px;
+}
+
+#status a{
+	color: white;
+	text-decoration: none;
+	margin-left: 40px;
+	margin-right: 80px;
+}
+</style>
+<div id="outer">
+<div id="title">
+<div id="logo"><img src="logo.png" /></div>
+<div id="menu">
+<label for="radio1">Home</label>
+<label for="radio2">Basis</label>
+<label for="radio3">Branchesoftware</label>
+<label for="radio4">Maatwerk</label>
+<label for="radio5">Contact</label>
+<label for="radio6">Over Ons</label>
+</div>
+</div>
+<div id="banner"><img src="main.jpg" /></div>
+<div id="content">
+<input id="radio1" type="radio" name="rgroup1" checked/><div id="block1">
+
+<h2>Coastal Light</h2>
+
+<p><b><i>Coastal Light, uw baken voor het moderniseren van uw bedrijfsprocessen.</i></b></p>
+
+<p>Coastal Light staat voor ontwikkeling van effectieve bedrijfssoftware voor het midden-en kleinbedrijf. Door systemen naadloos te laten aansluiten op de belevingswereld van de gebruiker. Honderd procent succesvolle projecten vanwege optimale acceptatie. Model voor deze systemen is de cockpit van een vliegtuig.  Systemen in de cockpit zijn zo efficiënt mogelijk afgestemd op de werkzaamheden van de piloot.</p>
+
+<p>Coastal Light stelt systemen en technieken aan het midden-en kleinbedrijf beschikbaar, welke voorheen alleen konden worden ingezet door grote ondernemingen.  Zo kunnen ook midden-en kleinbedrijven hun werkelijke potentieel ontwikkelen, omdat ze tot wel 60% minder tijd kwijt zijn aan hun administratieve processen.</p>
+
+<p>Vanuit de filosofie "minder is meer" zullen de Coastal Light systemen bijdragen aan lagere kosten per werkplek (zowel in onderhoud van de software als de investeringen in hardware). Tevens is er een aanzienlijk eenvoudigere server-infrastructuur nodig, zodat gebruik kan worden gemaakt van de allernieuwste computertechnieken.</p>
+</div>
+
+<input id="radio2" type="radio" name="rgroup1" /><div id="block2">
+<h2>Basis</h2>
+<p>CL-Base is de basismodule. Een volledig op zichzelf staand product dat elementaire bedrijfsprocessen ondersteunt die voor ieder bedrijf van toepassing zijn.</p>
+<ul>
+<li>Correspondentie
+<li>Agenda
+<li>Klantregistratie
+<li>Documentbeheer
+<li>Boekhouding
+<li>In -en Verkoop
+<li>Projecten
+<li>Personeel
+<li>Marketingacties
+</ul>
+
+<p>Het systeem is web-server-gëorienteerd.  Volledige functionaliteit van het systeem is voor alle medewerkers op basis van hun gebruikersprofiel beschikbaar.  Het systeem is toegankelijk zowel intern als extern via het internet.  Er is geen beperking op het aantal gelijktijdige gebruikers.</p>
+
+<p>Het systeem bevat standaard document definities en het systeem geeft ook de mogelijkheid zelf documenten te definiëren.  Tevens is er een workflow-editor waarin de document-definities kunnen worden gebruikt.</p>
+
+<p>Voorbeeld van een dergelijke workflow is:</p>
+
+<p><i>factuur (document) -> na 30 dagen niet betaald (status) -> aanmaning (document) -> geen reactie binnen een week (status) -> tweede aanmaning (document).</i></p>
+</div>
+
+<input id="radio3" type="radio" name="rgroup1" /><div id="block3">
+
+<h2>Branchesoftware</h2>
+
+<p>Voor een aantal branches bestaat er een standaard module, welke de branche specifieke onderdelen bevat.</p>
+
+<p>Bestaande branche modules zijn:</p>
+<ul>
+<li>Webwinkel
+<li>Beheer onroerend goed
+<li>Makelaardij
+<li>Verzekeringen
+<li>Toerisme
+<li>Logistiek
+<li>Zorg
+<li>Coaching
+<li>ZZP dienstverlening
+</ul>
+</div>
+
+<input id="radio4" type="radio" name="rgroup1" /><div id="block4">
+
+<h2>Maatwerk</h2>
+
+<p>Naast de branchemodules bestaat ook de mogelijkheid van maatwerkopdrachten.  Deze vinden plaats op basis van vooraf vastgestelde time-boxes.  Samen met de klant wordt een inventarisatie gemaakt van gewenste functionaliteiten ten opzichte van het beschikbare budget.  Hierdoor heeft de klant een optimaal overzicht over het verloop van een project met bijbehorende kosten.</p>
+
+<p>Tevens is de module maatwerk beschikbaar voor klanten die intern functionaliteit willen ontwikkelen.  Maatwerk wordt ontwikkeld in Javascript.  Er zijn veel Javascript-ontwikkelaars beschikbaar op de arbeidsmarkt.  Het is een makkelijk te leren programmeertaal, waardoor omscholing van in-of extern personeel eveneens tot de mogelijkheden behoort.</p>
+
+<p>De module maatwerk bevat ook een data-modelleer omgeving voor het creëren van bedrijfsspecifieke datamodellen.</p>
+</div>
+
+<input id="radio5" type="radio" name="rgroup1" /><div id="block5">
+
+<h2>Contactinformatie</h2>
+
+<table>
+<tr><td>Telefoon:</td><td>073 - 521 9429</td></tr>
+<tr><td>E-mail:</td><td><a href="mailto:info@coastallight.nl">info@coastallight.nl</a></td></tr>
+<tr><td>Adres:</td><td>Jagersingel 3, 5241 JW Rosmalen</td></tr>
+<tr><td>KvK-nummer:</td><td>60875070</td></tr>
+</table>
+</div>
+
+<input id="radio6" type="radio" name="rgroup1" /><div id="block6">
+<h2>Over Ons</h2>
+<p>Bij Coastal Light hebben wij jarenlange ervaring in het ontwikkelen van systemen voor grote multinationals.  Wij hebben expertise in alle aspecten van het softwareontwikkelingstraject.  Onze kennis en kunde die we hebben opgedaan bij deze multinationals willen we graag inzetten voor ontwikkelingen voor het midden-en kleinbedrijf.
+</p>
+</div>
+
+</div>
+<div id="bottom"><div id="status"><a id="disclaimer" href="disclaimer.pdf">Disclaimer</a><a id="conditions" href="algemene_voorwaarden.pdf">Algemene Voorwaarden</a></div></div>
+</div>
