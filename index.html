@@ -139,6 +139,27 @@ td{
 	margin-right: 80px;
 }
 </style>
+<script>
+if( !window.location.hash && window.addEventListener ){
+    window.addEventListener("load", function() {
+        setTimeout(function(){
+            window.scrollTo(0, 0);
+        }, 0);
+    });
+    window.addEventListener( "orientationchange",function() {
+        setTimeout(function(){
+            window.scrollTo(0, 0);
+        }, 0);
+    });
+    window.addEventListener( "touchstart",function() {
+         setTimeout(function(){
+             window.scrollTo(0, 0);
+         }, 0);
+     });
+}
+</script>
+</head>
+<body>
 <div id="outer">
 <div id="title">
 <div id="logo"><img src="logo.png" /></div>
@@ -242,3 +263,5 @@ td{
 </div>
 <div id="bottom"><div id="status"><a id="disclaimer" href="disclaimer.pdf">Disclaimer</a></div></div>
 </div>
+</body>
+</html>
