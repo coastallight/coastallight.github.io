@@ -75,33 +75,43 @@ label:hover{
 #block4{
 	column-count: 2;
 	-webkit-column-count: 2;
-
 }
 
 #radio1:checked ~ #block1{
 	display: block;
+  animation: fade_in 250ms ease-in-out both;
 }
 
 #radio2:checked ~ #block2{
 	display: block;
+  animation: fade_in 250ms ease-in-out both;
 }
 
 #radio3:checked ~ #block3{
 	display: block;
+  animation: fade_in 250ms ease-in-out both;
 }
 
 #radio4:checked ~ #block4{
 	display: block;
+  animation: fade_in 250ms ease-in-out both;
 }
 
 #radio5:checked ~ #block5{
 	display: block;
+  animation: fade_in 250ms ease-in-out both;
 }
 
 #radio6:checked ~ #block6{
 	display: block;
+  animation: fade_in 250ms ease-in-out both;
 }
 
+@keyframes fade_in{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}	
+	
 #banner{
 	overflow: hidden;
 }
